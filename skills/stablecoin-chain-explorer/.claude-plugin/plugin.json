@@ -4,10 +4,10 @@
   "description": "Explore stablecoin TVL and yield opportunities by blockchain. Compare cross-chain yields on Ethereum, BSC, Arbitrum, Base, Polygon, Optimism, Solana, and more. Also for protocols and issuers researching where stablecoin TVL and liquidity concentrate.",
   "author": {
     "name": "Barker",
-    "github": "YBSbarker",
+    "github": "barkermoney",
     "email": "partner@barker.money"
   },
   "license": "MIT",
   "homepage": "https://barker.money",
-  "repository": "https://github.com/YBSbarker/barker-mcp"
+  "repository": "https://github.com/barkermoney/barker-mcp"
 }

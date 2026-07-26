@@ -8,7 +8,7 @@ const os = require("node:os");
 
 const PKG_ROOT = path.resolve(__dirname, "..");
 const BUNDLED_SKILLS_DIR = path.join(PKG_ROOT, "skills");
-const REPO = "https://github.com/YBSbarker/barker-mcp";
+const REPO = "https://github.com/barkermoney/barker-mcp";
 
 function defaultTarget() {
   return (

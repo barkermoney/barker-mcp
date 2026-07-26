@@ -88,4 +88,4 @@ Real funds, real smart-contract risk, non-custodial throughout — a live proof,
 
 Website: https://barker.money
 Agent MCP: https://mcp.barker.money/mcp
-GitHub: https://github.com/YBSbarker/barker-mcp
+GitHub: https://github.com/barkermoney/barker-mcp

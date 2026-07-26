@@ -4,10 +4,10 @@
   "description": "Real-time stablecoin market overview - total market cap, yield-bearing cap, asset and chain distribution, plus market-wide APY versus US Treasury benchmark. Also institutional research and treasury sizing of the yield-bearing stablecoin market.",
   "author": {
     "name": "Barker",
-    "github": "YBSbarker",
+    "github": "barkermoney",
     "email": "partner@barker.money"
   },
   "license": "MIT",
   "homepage": "https://barker.money",
-  "repository": "https://github.com/YBSbarker/barker-mcp"
+  "repository": "https://github.com/barkermoney/barker-mcp"
 }

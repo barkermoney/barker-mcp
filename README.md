@@ -172,11 +172,11 @@ Skills in this repo follow the [agentskills.io](https://agentskills.io) open sta
 
 ```bash
 # Flagship skill straight from this repo (repeat for any skill under ./skills):
-hermes skills install https://raw.githubusercontent.com/YBSbarker/barker-mcp/main/skills/stablecoin-yield-radar/SKILL.md --name stablecoin-yield-radar
-hermes skills install https://raw.githubusercontent.com/YBSbarker/barker-mcp/main/skills/yield-strategy-advisor/SKILL.md --name yield-strategy-advisor
+hermes skills install https://raw.githubusercontent.com/barkermoney/barker-mcp/main/skills/stablecoin-yield-radar/SKILL.md --name stablecoin-yield-radar
+hermes skills install https://raw.githubusercontent.com/barkermoney/barker-mcp/main/skills/yield-strategy-advisor/SKILL.md --name yield-strategy-advisor
 
 # Or install the whole suite manually:
-git clone https://github.com/YBSbarker/barker-mcp.git
+git clone https://github.com/barkermoney/barker-mcp.git
 cp -r barker-mcp/skills/* ~/.hermes/skills/
 ```
 
@@ -186,7 +186,7 @@ Skills take effect in new Hermes sessions. Pair them with the remote MCP endpoin
 
 - **OKX Wallet Plugin Store**: `npx skills add okx/plugin-store --skill <skill-name>`
 - **Anthropic Plugin Marketplace**: each skill ships `.claude-plugin/plugin.json`, compatible with the Claude Code plugin marketplace
-- **Manual**: `git clone https://github.com/YBSbarker/barker-mcp.git && cp -r barker-mcp/skills/<skill-name> ~/.claude/skills/`
+- **Manual**: `git clone https://github.com/barkermoney/barker-mcp.git && cp -r barker-mcp/skills/<skill-name> ~/.claude/skills/`
 
 ### The skills
 
@@ -257,7 +257,7 @@ A: Barker is **stablecoin-only** and indexes real-time stablecoin yield in a sin
 ## Author & Maintainer Disclosure
 
 - **Project**: Barker — Yield Primitive for the Agent Economy ([barker.money](https://barker.money))
-- **GitHub org**: [YBSbarker](https://github.com/YBSbarker) (controlled by the Barker team)
+- **GitHub org**: [barkermoney](https://github.com/barkermoney) (controlled by the Barker team)
 - **Submitting committers**: `zuoyeweb3` (founder), `royrzguo` (engineering) — both authorized Barker team members
 - **Contact**: partner@barker.money
 
