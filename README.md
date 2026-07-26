@@ -172,12 +172,12 @@ Skills in this repo follow the [agentskills.io](https://agentskills.io) open sta
 
 ```bash
 # Flagship skill straight from this repo (repeat for any skill under ./skills):
-hermes skills install https://raw.githubusercontent.com/YBSbarker/barker-stablecoin-skills/main/skills/stablecoin-yield-radar/SKILL.md --name stablecoin-yield-radar
-hermes skills install https://raw.githubusercontent.com/YBSbarker/barker-stablecoin-skills/main/skills/yield-strategy-advisor/SKILL.md --name yield-strategy-advisor
+hermes skills install https://raw.githubusercontent.com/YBSbarker/barker-mcp/main/skills/stablecoin-yield-radar/SKILL.md --name stablecoin-yield-radar
+hermes skills install https://raw.githubusercontent.com/YBSbarker/barker-mcp/main/skills/yield-strategy-advisor/SKILL.md --name yield-strategy-advisor
 
 # Or install the whole suite manually:
-git clone https://github.com/YBSbarker/barker-stablecoin-skills.git
-cp -r barker-stablecoin-skills/skills/* ~/.hermes/skills/
+git clone https://github.com/YBSbarker/barker-mcp.git
+cp -r barker-mcp/skills/* ~/.hermes/skills/
 ```
 
 Skills take effect in new Hermes sessions. Pair them with the remote MCP endpoint (see [Connect](#connect-remote-mcp)) so tool calls resolve. Hermes has no built-in payments: route the x402 pay-per-call through an x402-capable payment skill, funded from a **dedicated low-balance payments wallet** — never your main wallet key. `tools/list` and discovery stay free.
@@ -186,7 +186,7 @@ Skills take effect in new Hermes sessions. Pair them with the remote MCP endpoin
 
 - **OKX Wallet Plugin Store**: `npx skills add okx/plugin-store --skill <skill-name>`
 - **Anthropic Plugin Marketplace**: each skill ships `.claude-plugin/plugin.json`, compatible with the Claude Code plugin marketplace
-- **Manual**: `git clone https://github.com/YBSbarker/barker-stablecoin-skills.git && cp -r barker-stablecoin-skills/skills/<skill-name> ~/.claude/skills/`
+- **Manual**: `git clone https://github.com/YBSbarker/barker-mcp.git && cp -r barker-mcp/skills/<skill-name> ~/.claude/skills/`
 
 ### The skills
 

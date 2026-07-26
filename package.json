@@ -1,6 +1,6 @@
 {
   "name": "@barkermoney/skills",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "The official skill suite + stdio MCP server from Barker — Yield Primitive for the Agent Economy. Real-time stablecoin yield index + AI yield advisor + non-custodial execution + risk signals. Skill installer for Claude Code / OKX Plugin Store; live data is served to agents via the MCP at mcp.barker.money. Every agent touching stablecoins eventually plugs in.",
   "keywords": [
     "stablecoin",
@@ -19,10 +19,10 @@
   "homepage": "https://barker.money",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YBSbarker/barker-stablecoin-skills.git"
+    "url": "git+https://github.com/YBSbarker/barker-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/YBSbarker/barker-stablecoin-skills/issues"
+    "url": "https://github.com/YBSbarker/barker-mcp/issues"
   },
   "license": "MIT",
   "author": "Barker (https://barker.money)",

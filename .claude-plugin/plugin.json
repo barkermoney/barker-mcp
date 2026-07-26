@@ -1,5 +1,5 @@
 {
-  "name": "barker-stablecoin-skills",
+  "name": "barker-mcp",
   "version": "2.4.0",
   "description": "AI Agent Skills for stablecoin yield intelligence from Barker — Yield Primitive for the Agent Economy. Real-time stablecoin yield index + AI yield advisor + non-custodial execution + risk signals: market overview, depeg monitoring, risk assessment, portfolio strategy, and ready-to-sign deposit/redeem transactions. Every agent touching stablecoins eventually plugs in. Served to agents via the MCP at mcp.barker.money.",
   "author": {
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "homepage": "https://barker.money",
-  "repository": "https://github.com/YBSbarker/barker-stablecoin-skills",
+  "repository": "https://github.com/YBSbarker/barker-mcp",
   "keywords": [
     "stablecoin",
     "defi",

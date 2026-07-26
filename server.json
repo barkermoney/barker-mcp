@@ -2,10 +2,10 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "money.barker/stablecoin-yield",
   "description": "Barker: real-time stablecoin yield index + AI advisor + non-custodial deposit/redeem (x402 paid).",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://barker.money",
   "repository": {
-    "url": "https://github.com/YBSbarker/barker-stablecoin-skills",
+    "url": "https://github.com/YBSbarker/barker-mcp",
     "source": "github"
   },
   "remotes": [
