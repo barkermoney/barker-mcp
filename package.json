@@ -1,6 +1,6 @@
 {
   "name": "@barkermoney/skills",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "The official skill suite + stdio MCP server from Barker — Yield Primitive for the Agent Economy. Real-time stablecoin yield index + AI yield advisor + non-custodial execution + risk signals. Skill installer for Claude Code / OKX Plugin Store; live data is served to agents via the MCP at mcp.barker.money. Every agent touching stablecoins eventually plugs in.",
   "keywords": [
     "stablecoin",
