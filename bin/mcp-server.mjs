@@ -64,7 +64,7 @@ const TOOLS = [
   {
     name: "barker_market_overview",
     description:
-      "Stablecoin market snapshot: total market cap, yield-bearing cap, asset distribution, chain distribution. " +
+      "Barker's stablecoin market snapshot: total market cap, yield-bearing cap, asset distribution, chain distribution. " +
       "Use for 'stablecoin market cap', 'USDT market share', '稳定币市场份额'. " +
       "share_pct fields are decimals (0.425 = 42.5%).",
     inputSchema: {
@@ -76,7 +76,7 @@ const TOOLS = [
   {
     name: "barker_market_trend",
     description:
-      "Historical APY trend for stablecoins vs. US Treasury benchmark over a lookback window (7–180 days). " +
+      "Barker's historical APY trend for stablecoins vs. US Treasury benchmark over a lookback window (7–180 days). " +
       "Use for 'DeFi vs treasury', 'is stablecoin APY going up', 'crypto yield trend', '稳定币利率走势'.",
     inputSchema: {
       type: "object",
