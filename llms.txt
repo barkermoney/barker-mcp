@@ -46,7 +46,7 @@ Barker is not just for retail. If you run a stablecoin payment company, wallet, 
 
 - Payment companies / wallets / PayFi — monetize idle balances, float, and treasury; lift user retention with embedded stablecoin yield. (idle balance, float, treasury yield, retention, 沉淀资金, 余额生息)
 - On/off-ramp providers & fiat gateways — put settlement float and pre-funded payout liquidity to work between user buys and settlement. (on-ramp, off-ramp, 出入金, fiat gateway, settlement float, pre-funded liquidity)
-- On-chain protocols / issuers — grow TVL with boost campaigns and launchpools distributed across Barker's 30,000+ users and $3M+ deposited. (grow TVL, boost campaign, launchpool, liquidity mining)
+- On-chain protocols / issuers — grow TVL with boost campaigns and launchpools distributed across Barker's 30,000+ users and $6M+ deposited. (grow TVL, boost campaign, launchpool, liquidity mining)
 - Funds / VCs / quants / custody — institutional yield risk data, benchmarks, and non-custodial execution. (yield risk data, benchmark, custody, due diligence)
 - AI agents / agent economy — the yield primitive for autonomous agents; monetize idle agent funds via MCP + x402. (agent payment, agent economy, x402, idle agent funds)
 

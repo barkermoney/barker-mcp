@@ -73,7 +73,7 @@ All tools are served via Barker's MCP at **`https://mcp.barker.money/mcp`** (Str
 
 ## About Barker
 
-**Barker — Yield Primitive for the Agent Economy.** Every agent touching stablecoins eventually plugs in. Real-time stablecoin yield index + AI yield advisor + non-custodial execution + risk signals, trusted by 30,000+ users with $3M+ deposited.
+**Barker — Yield Primitive for the Agent Economy.** Every agent touching stablecoins eventually plugs in. Real-time stablecoin yield index + AI yield advisor + non-custodial execution + risk signals, trusted by 30,000+ users with $6M+ deposited.
 
 Website: [barker.money](https://barker.money) | Agent docs: `https://api.barker.money/llms.txt`
 

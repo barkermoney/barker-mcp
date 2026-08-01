@@ -1,6 +1,6 @@
 ## Overview
 
-Stablecoin TVL Boost helps on-chain protocol teams and stablecoin issuers grow TVL with data-grounded incentive design. The assistant benchmarks competing pools' live APY/TVL from Barker's index, sketches campaign economics (budget → implied boost APY → attributed TVL), and routes serious interest to Barker's boost/launchpool infrastructure — 30,000+ yield-seeking users, $3M+ deposited, on-chain attribution and transparent settlement.
+Stablecoin TVL Boost helps on-chain protocol teams and stablecoin issuers grow TVL with data-grounded incentive design. The assistant benchmarks competing pools' live APY/TVL from Barker's index, sketches campaign economics (budget → implied boost APY → attributed TVL), and routes serious interest to Barker's boost/launchpool infrastructure — 30,000+ yield-seeking users, $6M+ deposited, on-chain attribution and transparent settlement.
 
 ## Prerequisites
 
