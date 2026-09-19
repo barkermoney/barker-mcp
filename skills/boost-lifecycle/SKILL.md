@@ -1,9 +1,9 @@
 ---
 name: boost-lifecycle
-version: 0.1.0
+version: 0.1.1
 description: >
   Full-lifecycle playbook for Barker boost campaigns: deposit with reward attribution,
-  expiry reminders, reward claiming, redemption, risk monitoring, and daily digest —
+  expiry reminders, reward claiming, redemption, and risk monitoring —
   every money-moving step via campaign-bound execution intents with explicit user confirmation.
   Powered by Barker (https://barker.money) — The Stablecoin Yield Map.
 ---
@@ -28,27 +28,25 @@ campaign、锁定期、赎回期、活动收益、帮我管理活动。
   root 未上链（root_pending）/ 本期无记录（no_proof）/ 领取暂停（paused）都属正常中间态，
   如实转述，不要当成故障。
 
-### 六个功能的工具组合配方
+### 五个功能的工具组合配方
 
 1. **参与/存入**：**query_boost_campaigns 拿活动与条款**（含未开始的预告活动；
    query_active_campaigns 看不到 scheduled 的 boost）→ 查 portfolio（红线：实时）→
    资产不符时先 execution_quote_swap 换币 → **复述条款（锁定期/赎回期/奖励口径/结束时间/金额）
    并获用户明确"确认"** → execution_prepare_vault_action(create_intent=true, campaign_id=活动绑定id)
    → 授权按钮。
-2. **到期提醒**：set_alert_rule(campaign_expiry / position_expiry，提前 N 天) + 定时任务兜底。
+2. **到期提醒**：schedule_monitoring_task（到期前 N 天提醒）。
 3. **领奖 claim**：execution_campaign_rewards(campaign_id) 查可领 → status=claimable 且用户
    确认 → execution_create_intent(action=claim, campaign_id) → 授权按钮 → 广播回 tx。
 4. **到期赎回**：确认赎回期已开 → execution_prepare_vault_action(action=redeem,
    create_intent=true, campaign_id) → 授权按钮。排队赎回类协议暂不支持 agent 执行，
    降级为提醒 + boost 页链接。
-5. **风控盯盘**：set_alert_rule(depeg / apy_below / tvl_change_pct) + schedule_monitoring_task
-   (daily/hourly)。触发时**提醒 + 给一键赎回入口**，绝不自动赎回（每笔都要用户当轮确认）。
-6. **日报纳入**：set_digest_settings 开启；日报会带持仓与到期信息。
+5. **风控盯盘**：schedule_monitoring_task（盯脱锚 / APY 下滑 / TVL 变化）。触发时**提醒 + 给一键赎回入口**，绝不自动赎回（每笔都要用户当轮确认）。
 
 ### 活动未开始（预告期）的正确姿势
 
 query_boost_campaigns 返回 start 在未来 / apy_kind=opening 的活动 = 预告期：如实告知开始时间与
-预期开盘 APY，先搭方案（save_yield_plan）+ 开始提醒（set_alert_rule/schedule），**开始后**再建
+预期开盘 APY，先搭方案（save_yield_plan）+ 开始提醒（schedule_monitoring_task），**开始后**再建
 存入凭证。**绝不因 query_active_campaigns 查不到就说活动不存在**。
 
 ### 硬边界（违反即事故）

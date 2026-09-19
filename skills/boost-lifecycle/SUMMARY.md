@@ -1,6 +1,6 @@
 ## Overview
 
-Boost Lifecycle manages a Barker boost campaign end to end: deposit with reward attribution, expiry reminders, reward claiming, redemption, risk monitoring, and a daily digest. Boost rewards follow min(D, C) accounting — D is the share balance attributed through Barker's entry (deposits bound to a `campaign_id`), C is the wallet's on-chain share balance — so every deposit this skill drives is campaign-bound; deposits made without the campaign binding earn nothing. Every money-moving step goes through a campaign-bound execution intent that the user explicitly confirms and signs — Barker never broadcasts and never holds funds.
+Boost Lifecycle manages a Barker boost campaign end to end: deposit with reward attribution, expiry reminders, reward claiming, redemption, and risk monitoring. Boost rewards follow min(D, C) accounting — D is the share balance attributed through Barker's entry (deposits bound to a `campaign_id`), C is the wallet's on-chain share balance — so every deposit this skill drives is campaign-bound; deposits made without the campaign binding earn nothing. Every money-moving step goes through a campaign-bound execution intent that the user explicitly confirms and signs — Barker never broadcasts and never holds funds.
 
 ## Prerequisites
 

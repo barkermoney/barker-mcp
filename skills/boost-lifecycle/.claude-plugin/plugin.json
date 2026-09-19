@@ -1,7 +1,7 @@
 {
   "name": "boost-lifecycle",
-  "version": "0.1.0",
-  "description": "Full-lifecycle playbook for Barker boost campaigns: deposit with reward attribution, expiry reminders, reward claiming, redemption, risk monitoring, and daily digest. Every money-moving step is a campaign-bound execution intent with explicit user confirmation — non-custodial, the user's own wallet signs.",
+  "version": "0.1.1",
+  "description": "Full-lifecycle playbook for Barker boost campaigns: deposit with reward attribution, expiry reminders, reward claiming, redemption, and risk monitoring. Every money-moving step is a campaign-bound execution intent with explicit user confirmation — non-custodial, the user's own wallet signs.",
   "author": {
     "name": "Barker",
     "github": "barkermoney",
