@@ -201,7 +201,7 @@ Skills take effect in new Hermes sessions. Pair them with the remote MCP endpoin
 | [stablecoin-chain-explorer](./skills/stablecoin-chain-explorer/) | TVL distribution and best yields by blockchain | `barker_market_overview` + `barker_defi_vaults` | "which chain for stablecoins", "Arbitrum stablecoin APY" |
 | [agent-payment-stats](./skills/agent-payment-stats/) | Cross-protocol agent-economy payment metrics (x402 real vs nominal, top sellers) | `barker_agent_payment_stats` | "x402 volume", "agent economy metrics" |
 | [stablecoin-treasury-yield](./skills/stablecoin-treasury-yield/) | B2B treasury & idle-balance yield: quantify idle float, run the $10 probe, map integration | `barker_defi_vaults` + execution tools | "idle balance", "treasury yield", "沉淀资金" |
-| [stablecoin-tvl-boost](./skills/stablecoin-tvl-boost/) | TVL growth for protocols: boost campaigns & launchpools (40k+ users, on-chain attribution) | `barker_market_overview` + `barker_defi_vaults` | "grow TVL", "launchpool" |
+| [stablecoin-tvl-boost](./skills/stablecoin-tvl-boost/) | TVL growth for protocols: boost campaigns & launchpools (50k+ users, on-chain attribution) | `barker_market_overview` + `barker_defi_vaults` | "grow TVL", "launchpool" |
 
 ---
 
