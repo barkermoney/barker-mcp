@@ -106,6 +106,24 @@ const TOOLS = [
     },
   },
   {
+    name: "barker_paper_hedge_farm",
+    description:
+      "Papertrade (HyperEVM) hedge-farm snapshot: PAPER mint rate per USD lost, BTC/ETH mid prices and open-interest headroom, " +
+      "Barker's hosted fee and size limits. Pass margin (USDC per leg) with optional leverage / stop_pct / take_pct / budget to get " +
+      "a cost estimate (USDC per PAPER). Read-only; the user starts at app.barker.money/paper.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        market: { type: "string", description: "BTC or ETH; omit for all" },
+        margin: { type: "number", description: "USDC margin per leg; enables the estimate" },
+        leverage: { type: "integer", minimum: 1, maximum: 100 },
+        stop_pct: { type: "number", description: "stop-loss distance in %, e.g. 0.3" },
+        take_pct: { type: "number", description: "take-profit distance in %, e.g. 0.6" },
+        budget: { type: "number", description: "USDC loss budget; default 5 × margin" },
+      },
+    },
+  },
+  {
     name: "barker_pool_search",
     description:
       "Fuzzy search Barker's pool index by keyword (protocol name / pool name / asset). " +
@@ -299,6 +317,9 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
         break;
       case "barker_pool_search":
         body = await callBarker("/agent-tools/pool_search", args);
+        break;
+      case "barker_paper_hedge_farm":
+        body = await callBarker("/agent-tools/paper_market", args);
         break;
       case "barker_pool_detail":
         body = await callBarker("/agent-tools/pool_detail", args);

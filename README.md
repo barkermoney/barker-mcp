@@ -60,7 +60,7 @@ curl -X POST https://mcp.barker.money/mcp \
 
 ## Tools
 
-11 tools in three layers. Prices are per call, settled via x402.
+12 tools in three layers. Prices are per call, settled via x402.
 
 **Data**
 
@@ -70,6 +70,7 @@ curl -X POST https://mcp.barker.money/mcp \
 | `barker_market_overview` | Total market cap, yield-bearing cap, asset/chain distribution | $0.001 |
 | `barker_market_trend` | Historical APY trend (7–180 days) vs US Treasury benchmark | $0.001 |
 | `barker_pool_search` | Search the yield index by asset, chain, protocol or keyword | $0.001 |
+| `barker_paper_hedge_farm` | Papertrade hedge-farm snapshot: PAPER mint rate, BTC/ETH mids and open-interest headroom, fee and limits, optional cost estimate per PAPER | $0.001 |
 
 **Judgment**
 
